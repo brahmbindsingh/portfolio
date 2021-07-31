@@ -6,6 +6,23 @@
     box-sizing: border-box;
     font-family: 'Poppins',sans-serif;
     outline: none;
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: rgb(233, 233, 233);
+}
+
+::-webkit-scrollbar-thumb{
+    background: gray;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background: rgb(175, 174, 174);
 }
 
 *::selection{
@@ -14,39 +31,46 @@
 }
 
 nav{
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    height: 65px;
+    
+    height: 48px;
     position: fixed;
     left: 0;
     right: 0;
     z-index: 9999;
+    display: flex;
+    align-items: center;
     /* backdrop-filter: blur(100px); */
 }
 
 .nav-links{
     display: flex;
-    width: 25%;
+    width: 30%;
     justify-content: space-around;
     list-style: none;
-}
-
-nav .logo{
-    font-weight: bold;
-    font-size: 25px;
-    color: rgb(17, 173, 184);
+    margin: auto;
 }
 
 .nav-links li a{
-    color: rgba(255, 255, 255, .82);
+    color: white;
     text-decoration: none;
     transition: .3s;
-    font-size: 15px;
+    font-size: 14px;
+    display: inline-block;
+    margin: 0;
+    font-weight: 200;
+    letter-spacing: 2px;
 }
 
-.nav-links li a:hover{
-    color: black;
+.nav-links li a::after{
+    display: block;
+    content: '';
+    border-bottom: solid 2px white;
+    transform: scaleX(0);
+    transition: transform 200ms ease-in-out;
+}
+
+.nav-links li a:hover::after{
+    transform: scaleX(1);
 }
 
 /* --------------------header--------------------- */
@@ -56,55 +80,9 @@ nav .logo{
     background: rgba(39, 39, 39,.5);
     background-image: linear-gradient(315deg, #414141 0%, #000000 100%);
     overflow: hidden;
-    background-clip: content-box;
 
 }
 
-.bg{
-    position: absolute;
-    right: 20%;
-}
-
-
-
-#header .intro-text{
-    color: white;
-    top: 50%;
-    transform: translateY(-50%);
-    position: relative;
-    left: 15%;
-    display: flex;
-    flex-direction: column;
-    font-size: 3rem;
-    line-height: 4.5rem;
-    width: fit-content;
-}
-
-#header .intro-text #job-title{
-    color: #FF1493;
-    font-size: 4rem;
-    position: relative;
-    width: fit-content;
-}
-
-#header .intro-text #job-title::after{
-    content: "";
-    position: absolute;
-    right: -10px;
-    height: 100%;
-    border-right: 4px solid white;
-
-    animation: blink .5s infinite ease;
-}
-
-@keyframes blink {
-    from,to{
-        opacity: 0;
-    }
-    50%{
-        opacity: 1;
-    }
-}
 
 /* ----------------social media------------------- */
 
@@ -206,6 +184,54 @@ footer{
     color: white;
 }
 
+/* -------------------about--------------------- */
+
+.cola{
+    height: 100%;
+}
+
+.cola:nth-child(1){
+    width: 30%;
+    height: initial;
+}
+
+.cola:nth-child(2){
+    width: 70%;
+}
+
+.cola .profile-pic{
+    width: 200px;
+    height: 200px;
+    margin: auto;
+    background: url(/WhatsApp\ Image\ 2021-07-31\ at\ 12.54.08\ PM.jpeg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 50%;
+    margin-bottom: 50px;
+}
+
+.cola .professional-links{
+    display: flex;
+    list-style: none;
+}
+
+.professional-links li{
+    /* padding: 10px; */
+    height: 50px;
+    width: 50px;
+    margin: 5px;
+}
+
+.cola .professional-links li a{
+    color: black;
+}
+
+.cola .professional-links li:nth-child(1):hover{
+    color: white;
+    background-color: #0077B5;
+}
+
 /* -------------------contact------------------- */
 
 .contact-modal{
@@ -216,7 +242,16 @@ footer{
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
-    transition: .3s ease-in;
+    /* transition: .3s ease-in; */
+}
+
+@keyframes magicAppear {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
 }
 
 .close-btn{
@@ -401,4 +436,12 @@ form input[type="submit"]:hover{
     100%{
         opacity: 1;
     }
+}
+
+/* ----------------------------------------------- */
+/* ----------------projects section--------------- */
+/* ----------------------------------------------- */
+
+@media screen and (max-width: 1200px){
+    
 }

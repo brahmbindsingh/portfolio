@@ -1,0 +1,22 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+iframe::-webkit-scrollbar{
+    display: none;
+}
+
+iframe{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+#project-hero{
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 100%;
+    border: 5px solid;
+}
