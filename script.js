@@ -11,16 +11,16 @@ list.forEach(elements => {
     })
 })
 
-let nav = document.querySelector("nav");
-let navLinks = nav.querySelectorAll(".nav-links li a");
-for(let i=0;i<navLinks.length;i++){
-    navLinks[i].addEventListener("click",function(e){
-        for(let j=0;j<navLinks.length;j++){
-            navLinks[j].classList.remove("active");
-        }
-        e.currentTarget.classList.add("active");
-    })
-}
+// let nav = document.querySelector("nav");
+// let navLinks = nav.querySelectorAll(".nav-links li a");
+// for(let i=0;i<navLinks.length;i++){
+//     navLinks[i].addEventListener("click",function(e){
+//         for(let j=0;j<navLinks.length;j++){
+//             navLinks[j].classList.remove("active");
+//         }
+//         e.currentTarget.classList.add("active");
+//     })
+// }
 
 let body = document.querySelector("body");
 let contact = document.querySelector(".milo");
@@ -52,7 +52,7 @@ contact.addEventListener("click",function(){
             </div>
         </div>
         <div class="col">
-            <form action="/list.php" method="POST" >
+            <form action="mailto:singhbrahmbind@gmail.com" method="POST" >
             <span>Drop a Message ;)</span>
                 <input type="text" name="name" id="name" required autocapitalize="words" placeholder="Name">
                 <input type="email" name="email" id="email" required placeholder="Email">
@@ -62,13 +62,18 @@ contact.addEventListener("click",function(){
             </form>
         </div>
     </div>`;
+    div.style.animation = `magicAppear .5s`;
     body.append(div);
     let closeBtn = document.querySelector(".close-btn");
     closeBtn.addEventListener("click",function(){
+        div.style.animation = `magicAppear .5s reverse`;
         div.remove();
     })
     contact.addEventListener("click",function(){
+        div.style.animation = `magicAppear .5s reverse`;
         div.remove(); 
     })
+    console.log("hello world");
 })
 
+let about = contact;
