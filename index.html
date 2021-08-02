@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="style.css">
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -11,47 +12,99 @@
      rel="stylesheet"
      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
    />
+   <!-- <link href="/tailwind.css" rel="stylesheet"> -->
     <title>Home</title>
 </head>
 <body>
 
+    <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Creating Inovation</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">For Everyday</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">People</span>
+            </h1>
+        </div>
+    </div>
+    <div class="slider"></div>
+
     <nav>
+        <div class="logo">
+            <a href="/index.html">Brahm Bind Singh</a>
+        </div>
         <ul class="nav-links">
-            <li><a href="#">About</a></li>
-            <li><a href="projects.html">Projects</a></li>
+            <li><a href="#">$whoami</a></li>
+            <li><a href="projects.html">&lt;Projects/&gt;</a></li>
             <li><a href="/BrahmBindSingh_GTBIT.pdf" target="_blank">Resume</a></li>
-            <li class="milo"><a href="#">Contact</a></li>
+            <li class="milo"><a href="#">?Contact</a></li>
         </ul>
+        <div class="hamburger">
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+        </div>
     </nav>
 
     <section id="header">
-        <div class="contact-modal">
-            <div class="close-btn">
-                <span>[X]</span>
+        <div class="job-names">
+            <div class="job web">
+                Website
             </div>
-            <div class="contact-container">
-                <div class="cola">
-                    <div class="profile-pic"></div>
-                    <ul class="professional-links">
-                        <li>
-                            <a href="">
-                                <i class="fab fa-linkedin-in"></i>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="">
-                                <i class="fab fa-github"></i>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="cola">
-
-                </div>
+            <div class="job soft">
+                Software
             </div>
         </div>
     </section>
+
+    <section id="services">
+
+    </section>
+
+    <!-- about -->
+    <!-- <div class="contact-modal">
+        <div class="close-btn">
+            <span>[X]</span>
+        </div>
+        <div class="contact-container">
+            <div class="cola">
+                <div class="profile-pic"></div>
+                <div style="text-align: center; font-weight: 700; font-size: 20px;">Brahm Bind Singh</div>
+                <div style="text-align: center; font-weight: 400; font-size: 16px;">Full Stack Developer</div>
+                <ul class="professional-links">
+                    <li>
+                        <a href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="cola">
+                <div class="about-me-txt">
+                    <span>Hi,</span>
+                    <p>I'm a software engineer based in India, who enjoys building things. I have done 300+ DSA questions on various platforms like <a href="https://pepcoding.com/" target="_blank">Pepcoding</a>, <a href="https://leetcode.com/" target="_blank">Leetcode</a>, etc</p>
+                    <br>
+                    <p>
+                        In 2019, I worked in <a href="https://www.booksforall.org.in/">Guzarish Ngo</a> as a web developer and increased it's reach by 20%, now its helps people from all over the country to easily discover books at minimal costs.
+                    </p>
+                    <br>
+                    <p>
+                        Don't hesitate to reach out by <a href="mailto:singhbrahmbind@gmail.com" target="_blank">email</a>. I'll be happy to talk!
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> -->
     
+    <!-- contact -->
     <!-- <div class="contact-modal">
         <div class="close-btn">
             <div class="line1"></div>
@@ -98,10 +151,10 @@
                 <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
             </li>
             <li data-text="Instagram" data-color="#e4405f">
-                <a href="https://www.instagram.com/brahmbindsingh/" class="instagram"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.instagram.com/brahmbindsingh/" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
             </li>
             <li data-text="Youtube" data-color="#ff0000">
-                <a href="" class="youtube"><i class="fab fa-youtube"></i></a>
+                <a href="" class="youtube" target="_blank"><i class="fab fa-youtube"></i></a>
             </li>
             <li data-text="Mail" data-color="rgb(11, 44, 150)">
                 <a href="mailto:singhbrahmbind@gmail.com" class="mail" target="_blank"><i class="fas fa-envelope"></i></a>
@@ -109,23 +162,26 @@
         </ul>
     </section>
 
+
+
     <footer>
-        <div class="copyRight">
-            Brahm Bind Singh © 2021
+        <div class="form">
+            <form action="mailto:singhbrahmbind@gmail.com" method="POST" id="form1">
+                <span class="subscribe">Subscribe for Newsletter</span>
+                <input type="email" placeholder="Enter email address ....">
+            </form>
+            <button type="submit" form="form1" value="Submit"><span>Submit</span></button>
         </div>
-        <div class="footerLinks">
-            <ul class="footer-links">
-                <li>
-                    <a href="" class="facebook"><i class="fab fa-facebook-f"></i></a>
-                </li>
-            </ul>
+        <div class="copyright">
+            <span></span>
         </div>
     </footer>
 
-    
 
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script src="app.js"></script>
     <script src="script.js"></script>
-    
 </body>
 </html>
