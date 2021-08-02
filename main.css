@@ -119,8 +119,7 @@ nav{
     font-size: 16px;
     display: inline-block;
     margin: 0;
-    font-weight: 400;
-    letter-spacing: 1px;
+    font-weight: 500;
 }
 
 .nav-links li a::after{
@@ -469,6 +468,7 @@ nav{
     .hamburger{
         display: block;
     }
+    
 }
 
 .nav-active{
@@ -496,4 +496,47 @@ nav{
 
 .toggle .line.three{
     transform: rotate(45deg) translate(-5px,-5px);
+}
+
+@media screen and (max-width:746px){
+    .intro-text{
+        font-size: 2rem;
+        /* padding: 0 20px; */
+    }
+}
+
+@media screen and (max-width:600px){
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-container .col:nth-child(1){
+        border: none;
+        justify-content: flex-start;
+        padding-left: 40px;
+    }
+
+    .left-cont h1{
+        font-size: 40px;
+        padding: 20px 0;
+    }
+    .form-icon li{
+        height: 40px;
+        width: 40px;
+        margin: 0;
+    }
+    .left-cont iframe{
+        display: none;
+    }
+    .col form span{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:425px){
+    .left-cont h1{
+        font-size: 30px;
+    }
+    .contact-container{
+        width: 90%;
+    }
 }

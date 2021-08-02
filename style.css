@@ -202,3 +202,44 @@ footer .copyright{
     justify-content: center;
     align-items: center;
 }
+
+@media screen  and (max-width:746px){
+    section.socialMedia{
+        height: 200px;
+    }
+    .socialLinks li a{
+        width: 80px;
+        height: 80px;
+        font-size: 2.5rem;
+    }
+}
+
+@media screen  and (max-width:500px){
+    .socialLinks{
+        padding: 0 10px;
+    }
+    .socialLinks li a{
+        margin: 20px 10px;
+    }
+    footer .form form input{
+        width: 300px;
+    }
+}
+
+@media screen and (max-width:425px){
+    section.socialMedia{
+        height: max-content;
+    }
+    .socialLinks{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width:350px){
+    footer .form form span{
+        font-size: 20px;
+    }
+    footer .form form input{
+        width: 250px;
+    }
+}
