@@ -119,3 +119,15 @@ nav{
 .nav-links li a:hover::after{
     transform: scaleX(1);
 }
+
+@media screen and (max-width:500px){
+    .intro-text{
+        font-size: 2rem;
+    }
+}
+
+@media screen and (max-width:345px){
+    .intro-text{
+        font-size: 1.5rem;
+    }
+}
