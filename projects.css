@@ -120,6 +120,44 @@ nav{
     transform: scaleX(1);
 }
 
+/* ----------------header------------------ */
+
+#header{
+    height: 100%;
+    overflow: hidden;
+    width: 100%;
+    background: #F6EEE3;
+    position: absolute;
+}
+
+#header .project-cont{
+    width: 60%;
+    margin: auto;
+    top: 20%;
+    position: relative;
+}
+
+#header .project-cont span{
+    font-size: 4rem;
+    font-weight: 500;
+    color: #333;
+    transform: scaleY(2.5);
+    font-family: 'Orpheus Pro',Times,serif;
+}
+
+#header .project-cont span::after{
+    content: '';
+    display: block;
+    width: 65%;
+    height: 1px;
+    background: grey;
+    right: 0;
+    top: 50%;
+    position: absolute;
+}
+
+/* --------------responsive---------------- */
+
 @media screen and (max-width:500px){
     .intro-text{
         font-size: 2rem;

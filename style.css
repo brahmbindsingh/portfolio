@@ -1,22 +1,97 @@
 /* --------------------header--------------------- */
 
+body{
+    height: 100%;
+}
+
 #header{
     height: 100vh;
     /* background: rgba(39, 39, 39,.5); */
     /* background-image: linear-gradient(315deg, #414141 0%, #000000 100%); */
-    background-color: #F6EEE3;
+    /* background-color: #F6EEE3; */
+    background-color: #000000;
     
 }
 
-.job-names{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+.introduction{
     display: flex;
-    justify-content: space-around;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
     width: 80%;
-    animation: slideUp 2s ease-in-out;
+    margin: auto;
+    justify-content: space-between;
+}
+
+.introduction-text{
+    color: white;
+    margin: auto 0;
+}
+
+.introduction-text h5{
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.introduction-text h1{
+    font-size: 3rem;
+    color: #FF346A;
+    filter: brightness(150%) saturate(150%);
+}
+
+.introduction-text span.loc{
+    display: block;
+    color: rgb(141, 140, 140);
+}
+
+.introduction-image{
+    background: url(./programming-code-window-GettyImages-1124838925_640hehe1.png);
+    height: 275px;
+    width: 415px;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px;
+}
+
+.wave {
+    animation-name: wave-animation;  /* Refers to the name of your @keyframes element below */
+    animation-duration: 2.5s;        /* Change to speed up or slow down */
+    animation-iteration-count: infinite;  /* Never stop waving :) */
+    transform-origin: 70% 70%;       /* Pivot around the bottom-left palm */
+    display: inline-block;
+  }
+  
+  @keyframes wave-animation {
+      0% { transform: rotate( 0.0deg) }
+     10% { transform: rotate(14.0deg) }  /* The following five values can be played with to make the waving more or less extreme */
+     20% { transform: rotate(-8.0deg) }
+     30% { transform: rotate(14.0deg) }
+     40% { transform: rotate(-4.0deg) }
+     50% { transform: rotate(10.0deg) }
+     60% { transform: rotate( 0.0deg) }  /* Reset for the last half to pause */
+    100% { transform: rotate( 0.0deg) }
+  }
+
+.introduction-text button{
+    background-color: #3500d3;
+    border: none;
+    color: white;
+    padding: 15px 40px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 200;
+    margin-top: 30px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: .4s;
+    border: 1px solid #3500d3;
+}
+
+.introduction-text button:hover{
+    background-color: transparent;
+    border: 1px solid white;
 }
 
 @keyframes slideUp {
@@ -29,18 +104,6 @@
         top: 50%;
     }
 }
-
-.job-names .job{
-    color: black;
-    -webkit-text-fill-color: transparent;
-    -webkit-text-stroke-width: 1px;
-    font-size: 5rem;
-    font-weight: 600;
-    cursor: pointer;
-    line-height: 5rem;
-    
-}
-
 
 /* ----------------social media------------------- */
 
