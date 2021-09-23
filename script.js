@@ -30,11 +30,23 @@ $(document).ready(function(){
     $(window).scroll(function(){
         var scroll = $(window).scrollTop();
         if (scroll > 600) {
+          $("nav").css("background","rgba(255,255,255,.8)");
+          $("nav").css("backdropFilter","blur(10px)");
+          $(".logo a").css("color","black");
           $(".nav-links li a").css("color" , "black");
+          $(".nav-links li a::after").css("border-bottom-color","black");
         }
   
         else{
+            $(".logo a").css("color","white");
+            $("nav").css("background","rgba(0,0,0,0)");
             $(".nav-links li a").css("color" , "white");  	
+            $("nav").css("backdropFilter","blur(0px)");
         }
     })
   })
+
+let p = document.querySelector(".back");
+let a = p.getAttribute("data-text");
+let pro = document.querySelector("#projects");
+
