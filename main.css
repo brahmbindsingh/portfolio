@@ -69,8 +69,8 @@
 }
 
 *::selection{
-    background-color: black;
-    color: white;
+    background-color: inherit;
+    color: inherit;
 }
 
 /* -------------------navbar---------------------- */
@@ -99,7 +99,7 @@ nav{
 }
 
 .logo a{
-    color:#F80332;
+    color:white;
     filter: saturate(200%) brightness(150%);
     font-size: 22px;
     font-weight: 700;

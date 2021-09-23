@@ -12,6 +12,11 @@
     color: black;
 }
 
+a:visited,a{
+    color: black;
+    text-decoration: none;
+}
+
 .intro{
     background: black;
     position: fixed;
@@ -124,7 +129,7 @@ nav{
 
 #header{
     height: 100%;
-    overflow: hidden;
+    /* overflow: hidden; */
     width: 100%;
     background: #F6EEE3;
     position: absolute;
@@ -155,6 +160,59 @@ nav{
     top: 50%;
     position: absolute;
 }
+
+.pro-cont{
+    width: 70%;
+    margin: auto;
+    position: relative;
+    top: 35%;
+}
+
+.pro{
+    display: flex;
+    align-items: center;
+}
+
+.pro.one .img-cont{
+    width: 500px;
+    height: 250px;
+    background: url("./Screenshot\ \(221\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pro.two .img-cont{
+    width: 500px;
+    height: 250px;
+    background: url("./Screenshot\ \(221\).png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.tech-stack{
+    display: flex;
+}
+
+.tech-stack .tags{
+    font-size: 13px;
+    padding: 5px 8px;
+}
+
+.tags .fab{
+    font-size: 20px;
+    cursor: pointer;
+}
+
+.tech-stack .tags:first-child{
+    padding-left: 0;
+}
+
+.tech-stack .tags:last-child{
+    padding-right: 0;
+}
+
 
 /* --------------responsive---------------- */
 
