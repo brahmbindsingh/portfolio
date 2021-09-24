@@ -4,27 +4,83 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/try/try.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <title>Document</title>
+    <!-- <link rel="stylesheet" href="main.css"> -->
+    <link rel="stylesheet" href="try.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+     rel="stylesheet"
+     href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.8/css/intlTelInput.css"
+   />
+    <title>Projects</title>
 </head>
 <body>
-    <header>
-        <div class="land">
-            <h1>Hi, I'm BB</h1>
-            <ul class="profile">
-                <li>Developer</li>
-                <li>Blogger</li>
-                <li>Producer</li>
-            </ul>
-            <ul class="links">
-                <li><i class="fab fa-twitter"></i></li>
-                <li><i class="fab fa-github"></i></li>
-                <li><i class="fab fa-linkedin-in"></i></li>
-                <li><i class="fas fa-envelope"></i></li>
-            </ul>
+    <!-- <div class="intro">
+        <div class="intro-text">
+            <h1 class="hide">
+                <span class="text">Collection</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">of my</span>
+            </h1>
+            <h1 class="hide">
+                <span class="text">Works</span>
+            </h1>
         </div>
-    </header>
-    <script src="/try/try.js"></script>
+    </div>
+    <div class="slider"></div> -->
+    
+    <nav>
+        <div class="logo">
+            <a href="index.html">Brahm Bind Singh</a>
+        </div>
+        <ul class="nav-links">
+            <li><a href="#">$whoami</a></li>
+            <li><a href="projects.html">&lt;Projects/&gt;</a></li>
+            <li><a href="BrahmBindSingh_GTBIT.pdf" target="_blank">Resume</a></li>
+            <li class="milo"><a href="#">?Contact</a></li>
+        </ul>
+        <div class="hamburger">
+            <div class="line one"></div>
+            <div class="line two"></div>
+            <div class="line three"></div>
+        </div>
+    </nav>
+
+    <section id="projects">
+        <h1>Projects</h1>
+        <div class="project-container">
+            <div class="project one">
+                <span>Portfolio</span>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span>jQuery</span>
+                </div>
+            </div>
+            <div class="project two">
+                <span>Excel Clone</span>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span><a href="https://github.com/brahmbindsingh/excel-clone" target="_blank"><i class="fab fa-github"></i></a></span>
+                </div>
+            </div>
+            <div class="project three">
+                <span>Jira Ticket App</span>
+                <div class="tags">
+                    <span>HTML</span>
+                    <span>CSS</span>
+                    <span>JavaScript</span>
+                    <span><a href="https://github.com/brahmbindsingh/Zira-ticket-app" target="_blank"><i class="fab fa-github"></i></a></span>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js" integrity="sha512-UxP+UhJaGRWuMG2YC6LPWYpFQnsSgnor0VUF3BHdD83PS/pOpN+FYbZmrYN+ISX8jnvgVUciqP/fILOXDjZSwg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="app.js"></script>
+    <script src="projects.js"></script>
 </body>
 </html>
