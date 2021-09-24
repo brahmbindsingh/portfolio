@@ -24,7 +24,10 @@ t1.to('.slider',{y: "-100%",duration:1.5,delay:.5});
 t1.to('.intro',{y:"-100%",duration:1},"-=1");
 t1.fromTo('nav',{opacity:0},{opacity:1,duration:1});
 // t1.fromTo('.job-names',{opacity:0},{opacity:1,duration:1});
+t1.fromTo('.introduction-text',{opacity:0},{opacity:1,duration:1});
 
+
+//navbar on scroll effects
 
 $(document).ready(function(){
     $(window).scroll(function(){
@@ -45,8 +48,4 @@ $(document).ready(function(){
         }
     })
   })
-
-let p = document.querySelector(".back");
-let a = p.getAttribute("data-text");
-let pro = document.querySelector("#projects");
 
