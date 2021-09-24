@@ -462,9 +462,13 @@ nav{
         width: 50%;
         transform: translateX(100%);
         transition: transform .5s ease-in;
+        /* color: black; */
     }
     .nav-links li{
         opacity: 0;
+    }
+    .nav-links li a{
+        color: black !important;
     }
     .hamburger{
         display: block;
