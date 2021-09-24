@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap');
 
 *{
     margin: 0;
@@ -9,10 +10,11 @@
 
 body{
     scroll-behavior: smooth;
+    background-color: #dee2e6;
 }
 
 *::selection{
-    background-color: white;
+    background-color: #adb5bd;
     color: black;
 }
 
@@ -81,6 +83,8 @@ nav{
     /* backdrop-filter: blur(100px); */
     justify-content: space-around;
     /* animation: appear 2s ease-in-out; */
+    backdrop-filter: blur(10px);
+    background: rgba(222,226,230,.8);
 }
 
 @keyframes appear {
@@ -95,7 +99,7 @@ nav{
 .logo a{
     color: black;
     font-size: 22px;
-    font-weight: 700;
+    font-weight: 500;
     text-decoration: none;
 }
 
@@ -113,7 +117,7 @@ nav{
     font-size: 16px;
     display: inline-block;
     margin: 0;
-    font-weight: 400;
+    font-weight: 300;
     letter-spacing: 1px;
 }
 
@@ -131,92 +135,77 @@ nav{
 
 /* ----------------header------------------ */
 
-#header{
-    height: 100%;
-    /* overflow: hidden; */
-    width: 100%;
-    background: #F6EEE3;
-    position: absolute;
-}
-
-#header .project-cont{
+#projects{
     width: 60%;
-    margin: auto;
-    top: 20%;
-    position: relative;
-}
-
-#header .project-cont span{
-    font-size: 4rem;
-    font-weight: 500;
-    color: #333;
-    transform: scaleY(2.5);
-    font-family: 'Orpheus Pro',Times,serif;
-}
-
-#header .project-cont span::after{
-    content: '';
-    display: block;
-    width: 65%;
-    height: 1px;
-    background: grey;
-    right: 0;
-    top: 50%;
     position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translateX(-50%);
+    padding-bottom: 50px;
 }
 
-.pro-cont{
-    width: 70%;
-    margin: auto;
+#projects > h1{
+    font-size: 7rem;
+    margin: 20px 0 60px;
+    user-select: none;
+    font-weight: 400;
+}
+
+.project{
+    margin: 40px 0;
     position: relative;
-    top: 35%;
+    transition: .3s;
 }
 
-.pro{
+.project > span{
+    font-size: 5rem;
+    /* line-height: 6rem; */
+    /* user-select: none; */
+    font-weight: 200;
+    cursor: pointer;
+    /* animation: slideToTheSide .5s forward; */
+    /* transition: width ; */
+    /* transition: .3s; */
+    
+}
+
+/* .project>span:hover{
+    margin-left: 30px;
+} */
+
+.project:hover{
+    margin-left: 30px;
+}
+
+.tags{
     display: flex;
     align-items: center;
 }
 
-.pro.one .img-cont{
-    width: 500px;
-    height: 250px;
-    background: url("./Screenshot\ \(221\).png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.tags > span{
+    color: #e63946;
+    margin: 0 10px;
 }
 
-.pro.two .img-cont{
-    width: 500px;
-    height: 250px;
-    background: url("./Screenshot\ \(221\).png");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
+.tags span:first-child{
+    margin-left: 0;
 }
 
-.tech-stack{
-    display: flex;
-}
-
-.tech-stack .tags{
-    font-size: 13px;
-    padding: 5px 8px;
-}
-
-.tags .fab{
+.tags span i{
     font-size: 20px;
-    cursor: pointer;
+    line-height: 20px;
 }
 
-.tech-stack .tags:first-child{
-    padding-left: 0;
-}
-
-.tech-stack .tags:last-child{
-    padding-right: 0;
-}
-
+/* @keyframes slideToTheSide {
+    from{
+        margin-left: 0px;
+        width: 100%;
+    }
+    to{
+        margin-left: 100px;
+        width: 130%;
+    }
+} */
 
 /* --------------responsive---------------- */
 
