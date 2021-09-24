@@ -24,7 +24,7 @@ t1.to('.slider',{y: "-100%",duration:1.5,delay:.5});
 t1.to('.intro',{y:"-100%",duration:1},"-=1");
 t1.fromTo('nav',{opacity:0},{opacity:1,duration:1});
 // t1.fromTo('.job-names',{opacity:0},{opacity:1,duration:1});
-t1.fromTo('.introduction-text',{opacity:0},{opacity:1,duration:1});
+t1.fromTo('.introduction-text',{opacity:0},{opacity:1,duration:2},"-=1");
 
 
 //navbar on scroll effects
