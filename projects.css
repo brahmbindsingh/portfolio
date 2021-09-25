@@ -149,6 +149,7 @@ nav{
     margin: 20px 0 60px;
     user-select: none;
     font-weight: 400;
+    transition: .2s;
 }
 
 .project{
@@ -209,14 +210,46 @@ nav{
 
 /* --------------responsive---------------- */
 
+@media screen and (max-width:746px) {
+    #projects > h1{
+        font-size: 6rem;
+    }
+    .project > span{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width:592px){
+
+    #projects{
+        width: 80%;
+    }
+
+    #projects > h1{
+        font-size: 5rem;
+    }
+    .project > span{
+        font-size: 3rem;
+    }
+}
+
 @media screen and (max-width:500px){
     .intro-text{
         font-size: 2rem;
     }
 }
 
+@media screen and (max-width:378px){
+    #projects > h1{
+        font-size: 4rem;
+    }
+}
+
 @media screen and (max-width:345px){
     .intro-text{
         font-size: 1.5rem;
+    }
+    .tags{
+        flex-wrap: wrap;
     }
 }
